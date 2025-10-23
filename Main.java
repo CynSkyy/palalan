@@ -1,17 +1,18 @@
 
-package Pertemuan2;
+package Pertemuan4;
 
 public class Main {
     public static void main(String[] args) {
-        P2 buku = new P2("Pulang");
-        buku.tampilbuku();
-        P2 buku2 = new P2(2015);
-        buku2.tampilbuku();
-        P2 buku3 = new P2("Tere Liye",2015);
-        buku3.tampilbuku();
-        P2 buku4 = new P2("Pulang","Tere Liye",2015);
-        buku4.tampilbuku();
-            
-
+        persegi p = new persegi(4);
+        persegi p2 = new persegi(2);
+        Lingkaran L = new Lingkaran(4);
+        Lingkaran L2 = new Lingkaran(2);
+        p.persegi();
+        System.out.println("masukan sisi persegi : " + p.sisi);
+        System.out.println("hasil luas persegi : " + p.luas());
+        L2.lingkaran();
+        System.out.println("Masukan sisi : " + L2.r);
+        System.out.println("keliling lingkaran : " + L2.keliling());
+        
     }
 }
